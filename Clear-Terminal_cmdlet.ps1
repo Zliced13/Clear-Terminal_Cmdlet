@@ -27,7 +27,7 @@
 .RELEASENOTES
     Version 0.1: Added the Clear-Terminal_cmdlet.ps1 file. First release.
     Version 0.3.1: Edited and fixed the about page for Clear-Terminal again.
-    Version 0.3.3: Fixed the about page for Clear-Terminal again.
+    Version 0.3.4: Fixed the about page for Clear-Terminal again.
 #>
 
 <#
