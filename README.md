@@ -16,7 +16,7 @@ Versions will be posted on the releases page of this repository.
 
 2. Or you could also run (if you don't like downloading files.):
     ```
-    (iwr 'github.com/Zliced13/Clear-Terminal_Cmdlet/raw/main/Clear-Terminal_cmdlet.ps1').Content | iex
+    nmo -Name 'Clear-Terminal_module' -ScriptBlock { (iwr 'raw.githubusercontent.com/Zliced13/Clear-Terminal_Cmdlet/main/Clear-Terminal_cmdlet.ps1').Content | iex } | ipmo
     ```
 
 If you want to make the cmdlet **permanent** for every PowerShell session, add one of the two commands to your **`$PROFILE`**.
