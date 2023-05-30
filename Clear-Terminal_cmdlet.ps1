@@ -54,9 +54,8 @@ function Clear-Terminal {
         else {
             cmd /c 'cls'
         }
+        foreach ($Private:item in 'cls', 'clear') {
+            Set-Alias $Private:item 'Clear-Terminal'
+        }
     }
-}
-
-foreach ($Private:item in 'cls', 'clear') {
-    Set-Alias $Private:item 'Clear-Terminal'
 }
