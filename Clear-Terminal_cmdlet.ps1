@@ -8,8 +8,6 @@
 
 .COPYRIGHT Zliced13 (Kris Schneider)
 
-.
-
 #>
 
 <#
