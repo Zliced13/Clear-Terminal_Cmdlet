@@ -2,7 +2,7 @@
 
 A simple cmdlet for PowerShell Core (and 5.0) that completely clears your terminal, leaving nothing behind unlike the built-in `Clean-Host` cmdlet.
 
-NOTE: This is for Microsoft Windows 32bit/64bit **only**.
+___NOTE: This is for Microsoft Windows 32bit/64bit **only**.___
 
 # How to install?
 
