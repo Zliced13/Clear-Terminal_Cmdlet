@@ -7,7 +7,7 @@ ___NOTE: This is for Microsoft Windows 32bit/64bit **only**.___
 # How to install?
 
 Versions will be posted on the releases page of this repository.
-1. Click this [link](Clear-Terminal_cmdlet.ps1) here, to download the latest version of `Clear-Terminal`.
+1. Click this [link](https://github.com/Zliced13/Clear-Terminal_Cmdlet/raw/main/Clear-Terminal_cmdlet.ps1) here, to download the latest version of `Clear-Terminal`.
 
     After you have downloaded the file, add the cmdlet to your current PowerShell session, by running:
     ```
