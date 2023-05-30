@@ -1,6 +1,6 @@
 <#PSScriptInfo
 
-.VERSION 0.3.6
+.VERSION 0.3.7
 
 .AUTHOR Zliced13
 
