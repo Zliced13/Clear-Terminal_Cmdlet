@@ -2,12 +2,12 @@
 
 A simple cmdlet for PowerShell Core (and 5.0) that completely clears your terminal, leaving nothing behind unlike the built-in `Clean-Host` cmdlet.
 
-### NOTE: This is for Microsoft Windows 32bit/64bit **only**.
+NOTE: This is for Microsoft Windows 32bit/64bit **only**.
 
-## How to install?
+# How to install?
 
 Versions will be posted on the releases page of this repository.
-1. Click this [link](github.com/Zliced13/Clear-Terminal_Cmdlet/raw/main/Clear-Terminal_cmdlet.ps1) here, to download the latest version of `Clear-Terminal`.
+1. Click this [link](Clear-Terminal_cmdlet.ps1) here, to download the latest version of `Clear-Terminal`.
 
     After you have downloaded the file, add the cmdlet to your current PowerShell session, by running:
     ```
