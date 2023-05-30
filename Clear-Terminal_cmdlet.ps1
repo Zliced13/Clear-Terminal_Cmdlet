@@ -35,6 +35,8 @@
     Clears everthing in the display in the host program, leaving nothing behind.
 .PARAMETER Help
     Displays this message, it will not accept any values. Aliases, h.
+.EXAMPLE
+    Clear-Terminal <NoParameters>
 #>
 
 function Clear-Terminal {
