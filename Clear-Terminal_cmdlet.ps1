@@ -44,5 +44,3 @@ function Clear-Terminal {
         }
     }
 }
-
-New-Module -Name 'Clear-Terminal_module' -ScriptBlock { $MyInvocation.MyCommand.Source } | Import-Module
