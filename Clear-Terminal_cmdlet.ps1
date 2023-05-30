@@ -29,7 +29,7 @@
     Version 0.2: Improved the script so the aliases work better for PowerShell Core.
     Version 0.2.2: Fixed bugs that occurred with PowerShell Core.
     Version 0.2.4: Fixed bugs that occurred with PowerShell Core & Desktop.
-
+    Version 0.2.45: Edited the about page for Clear-Terminal.
 #>
 
 foreach ($Private:alias in @('cls', 'clear', 'clt')) {
@@ -43,12 +43,15 @@ foreach ($Private:alias in @('cls', 'clear', 'clt')) {
     Clears everthing in the display in the host program, leaving nothing behind.
 .PARAMETER Help
     Displays this message, it will not accept any values. Aliases, h.
+.ALIASES
+    'cls', 'clear', 'clt'
 .EXAMPLE
     Clear-Terminal <NoParameters>
 #>
 
 function Clear-Terminal {
     [CmdletBinding()]
+    [Aliases('cls', 'clear', 'clt')]
     param (
         [Parameter(Mandatory = $false)]
         [switch][Alias('h')]$Help
