@@ -12,9 +12,9 @@
 
 .TAGS
 
-.LICENSEURI
+.LICENSEURI https://github.com/Zliced13/Clear-Terminal_Cmdlet/raw/main/LICENSE
 
-.PROJECTURI
+.PROJECTURI https://github.com/Zliced13/Clear-Terminal_Cmdlet
 
 .ICONURI
 
@@ -25,11 +25,6 @@
 .EXTERNALSCRIPTDEPENDENCIES
 
 .RELEASENOTES
-#>
-
-<#
-    CHANGELOG
-
     Version 0.1: Added the Clear-Terminal_cmdlet.ps1 file.
 #>
 
