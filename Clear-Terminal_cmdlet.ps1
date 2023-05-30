@@ -14,7 +14,6 @@
     CHANGELOG
 
     Version 0.1: Added the Clear-Terminal_cmdlet.ps1 file.
-
 #>
 
 <#
@@ -45,3 +44,5 @@ function Clear-Terminal {
         }
     }
 }
+
+New-Module -Name 'Clear-Terminal' -ScriptBlock { (Get-ChildItem "$PSScriptRoot\$($MyInvocation.MyCommand)" | Get-Content) | Invoke-Expression } | Import-Module
