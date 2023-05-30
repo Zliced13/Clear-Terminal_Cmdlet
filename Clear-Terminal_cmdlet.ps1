@@ -25,7 +25,7 @@
 .EXTERNALSCRIPTDEPENDENCIES
 
 .RELEASENOTES
-    Version 0.1: Added the Clear-Terminal_cmdlet.ps1 file.
+    Version 0.1: Added the Clear-Terminal_cmdlet.ps1 file. First release.
 #>
 
 <#
