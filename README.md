@@ -10,13 +10,13 @@ Versions will be posted on the releases page of this repository.
 1. Click this [link](https://github.com/Zliced13/Clear-Terminal_Cmdlet/raw/main/Clear-Terminal_cmdlet.ps1) here, to download the latest version of `Clear-Terminal`.
 
     After you have downloaded the file, add the cmdlet to your current PowerShell session, by running:
-    ```
+    ```pwsh
     . 'folder_that_you_put_the_PS1_file_in\Clear-Terminal_cmdlet.ps1'
     ```
 
 2. Or you could also run (if you don't like downloading files.):
-    ```
-    nmo -Name 'Clear-Terminal_module' -ScriptBlock { (iwr 'raw.githubusercontent.com/Zliced13/Clear-Terminal_Cmdlet/main/Clear-Terminal_cmdlet.ps1').Content | iex } | ipmo
+    ```pwsh
+    nmo -Name 'Clear-Terminal_module' -ScriptBlock { (iwr 'raw.githubusercontent.com/Zliced13/Clear-Terminal_Cmdlet/main/Clear-Terminal_cmdlet.ps1' -useb).Content | iex } | ipmo
     ```
 
 If you want to make the cmdlet **permanent** for every PowerShell session, add one of the two commands to your **`$PROFILE`**.
