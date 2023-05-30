@@ -39,7 +39,6 @@
 
 function Clear-Terminal {
     [CmdletBinding()]
-    [Alias('cls', 'clear')]
     param (
         [Parameter(Mandatory = $false)]
         [switch][Alias('h')]$Help
@@ -58,5 +57,5 @@ function Clear-Terminal {
 }
 
 foreach ($Private:item in @('cls', 'clear')) {
-    Set-Alias $Private:item 'Clear-Terminal'
+    Set-Alias $Private:item 'Clear-Terminal' -Force -Option 'AllScope', 'Constant', 'ReadOnly'
 }
