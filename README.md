@@ -6,7 +6,6 @@ A simple cmdlet for PowerShell Core (and 5.0) that completely clears your termin
 
 ## How to install?
 
----
 Versions will be posted on the releases page of this repository.
 1. Click this [link](github.com/Zliced13/Clear-Terminal_Cmdlet/raw/main/Clear-Terminal_cmdlet.ps1) here, to download the latest version of `Clear-Terminal`.
 
