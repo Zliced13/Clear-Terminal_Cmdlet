@@ -11,7 +11,7 @@ Versions will be posted on the releases page of this repository.
 
     After you have downloaded the file, add the cmdlet to your current PowerShell session, by running:
     ```
-    . 'folder_that_you_put_the_PS1_file_in\Clear-Terminal_cmdlet.ps1'
+    Import-Module 'folder_that_you_put_the_PS1_file_in\Clear-Terminal_cmdlet.ps1'
     ```
 
 2. Or you could also run (if you don't like downloading files.):
