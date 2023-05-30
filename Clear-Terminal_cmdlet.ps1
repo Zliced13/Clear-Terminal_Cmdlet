@@ -10,6 +10,8 @@
 
 .TAGS
 
+.LICENSE MIT
+
 .LICENSEURI https://github.com/Zliced13/Clear-Terminal_Cmdlet/raw/main/LICENSE
 
 .PROJECTURI https://github.com/Zliced13/Clear-Terminal_Cmdlet
