@@ -1,3 +1,15 @@
+#requires -version 5.0
+
+<#PSScriptInfo
+
+.VERSION 0.1
+
+.AUTHOR Zliced13
+
+.COPYRIGHT Zliced13 (Kris Schneider)
+
+#>
+
 <#
     CHANGELOG
 
