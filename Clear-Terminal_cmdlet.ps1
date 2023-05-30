@@ -29,6 +29,7 @@
     Version 0.3.1: Edited and fixed the about page for Clear-Terminal again.
     Version 0.3.4: Fixed the about page for Clear-Terminal again.
     Version 0.3.7: Fixed the about page for Clear-Terminal again and Improved the Clear-Terminal cmdlet.
+    Version 0.3.8: Improved the Clear-Terminal cmdlet.
 #>
 
 foreach ($Private:alias in @('cls', 'clear', 'clt')) {
