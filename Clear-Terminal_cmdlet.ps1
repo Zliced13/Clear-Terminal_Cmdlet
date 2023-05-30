@@ -32,7 +32,7 @@
 #>
 
 foreach ($Private:alias in @('cls', 'clear')) {
-    Set-Alias $Private:alias 'Clear-Terminal' -Force -Option 'AllScope', 'Constant', 'ReadOnly' -Scope 'Global' -Description 'Aliases for the Clear-Terminal cmdlet' | Out-Null
+    Set-Alias $Private:alias 'clt' -Force -Option 'AllScope', 'Constant', 'ReadOnly' -Scope 'Global' -Description 'Aliases for the Clear-Terminal cmdlet' | Out-Null
 }
 
 <#
