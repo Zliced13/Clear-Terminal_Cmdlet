@@ -51,7 +51,6 @@ foreach ($Private:alias in @('cls', 'clear', 'clt')) {
 
 function Clear-Terminal {
     [CmdletBinding()]
-    [Aliases('cls', 'clear', 'clt')]
     param (
         [Parameter(Mandatory = $false)]
         [switch][Alias('h')]$Help
