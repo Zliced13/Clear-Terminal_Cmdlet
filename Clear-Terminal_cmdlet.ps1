@@ -8,6 +8,8 @@
 
 .COPYRIGHT Zliced13 (Kris Schneider)
 
+.
+
 #>
 
 <#
@@ -45,4 +47,4 @@ function Clear-Terminal {
     }
 }
 
-New-Module -Name 'Clear-Terminal' -ScriptBlock { (Get-ChildItem "$PSScriptRoot\$($MyInvocation.MyCommand)" | Get-Content) | Invoke-Expression } | Import-Module
+New-Module -Name 'Clear-Terminal' -ScriptBlock { $MyInvocation.MyCommand.Source } | Import-Module
