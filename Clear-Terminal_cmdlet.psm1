@@ -33,5 +33,3 @@ function Clear-Terminal {
         }
     }
 }
-
-Export-ModuleMember -Function 'Clear-Terminal'
