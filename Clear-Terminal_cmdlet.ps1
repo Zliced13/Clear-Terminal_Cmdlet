@@ -56,3 +56,7 @@ function Clear-Terminal {
         }
     }
 }
+
+foreach ($Private:item in 'cls', 'clear') {
+    Set-Alias $Private:item 'Clear-Terminal'
+}
