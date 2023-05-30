@@ -41,9 +41,13 @@
     Clear-Terminal <NoParameters>
 #>
 
+foreach ($Private:alias in @('cls', 'clear')) {
+    Set-Alias $Private:alias 'Clear-Terminal' -Force -Option 'AllScope', 'Constant', 'ReadOnly' -Scope 'Global' -Description 'Aliases for the Clear-Terminal cmdlet'
+}
+
 function Clear-Terminal {
     [CmdletBinding()]
-    [Alias('clear')]
+    [Alias('clt')]
     param (
         [Parameter(Mandatory = $false)]
         [switch][Alias('h')]$Help
@@ -59,8 +63,4 @@ function Clear-Terminal {
             cmd /c 'cls'
         }
     }
-}
-
-if ($PSEdition -eq 'Core') {
-    Set-Alias 'cls' 'Clear-Terminal' -Force -Option 'AllScope', 'Constant'
 }
