@@ -39,6 +39,7 @@
 
 function Clear-Terminal {
     [CmdletBinding()]
+    [Alias('cls', 'clear')]
     param (
         [Parameter(Mandatory = $false)]
         [switch][Alias('h')]$Help
