@@ -24,6 +24,7 @@
 
 .RELEASENOTES
     Version 0.1: Added the Clear-Terminal_cmdlet.ps1 file. First release.
+    Version 0.2: Improved the script so the aliases work better for PowerShell Core.
 #>
 
 <#
