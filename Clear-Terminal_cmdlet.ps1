@@ -43,6 +43,11 @@ function Clear-Terminal {
         [Parameter(Mandatory = $false)]
         [switch][Alias('h')]$Help
     )
+    begin {
+        foreach ($Private:item in @('cls', 'clear')) {
+            Set-Alias $Private:item 'Clear-Terminal' -Force -Option 'AllScope', 'Constant', 'ReadOnly'
+        }
+    }
     process {
         if ($Help) { Get-Help 'Clear-Terminal' -Full; break }
         if (!(Get-Command 'cmd' -ErrorAction 'SilentlyContinue')) {
@@ -54,8 +59,4 @@ function Clear-Terminal {
             cmd /c 'cls'
         }
     }
-}
-
-foreach ($Private:item in @('cls', 'clear')) {
-    Set-Alias $Private:item 'Clear-Terminal' -Force -Option 'AllScope', 'Constant', 'ReadOnly'
 }
