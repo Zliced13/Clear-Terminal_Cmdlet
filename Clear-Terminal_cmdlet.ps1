@@ -58,7 +58,3 @@ function Clear-Terminal {
         }
     }
 }
-
-foreach ($Private:alias in @('cls', 'clear')) {
-    Set-Alias $Private:alias 'Clear-Terminal' -Force -Option 'AllScope', 'Constant'
-}
