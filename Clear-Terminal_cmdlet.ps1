@@ -1,5 +1,3 @@
-#requires -version 5.0
-
 <#PSScriptInfo
 
 .VERSION 0.1
