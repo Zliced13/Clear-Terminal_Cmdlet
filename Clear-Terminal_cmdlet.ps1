@@ -53,7 +53,7 @@ function Clear-Terminal {
         [switch][Alias('h')]$Help
     )
     process {
-        if ($Help) { Get-Help 'Clear-Terminal' -Full; Write-Host "`nALIASES`n`tcls`nclear`nclt"; break }
+        if ($Help) { Get-Help 'Clear-Terminal' -Full; Write-Host "`nALIASES`n   cls`n   clear`n   clt"; break }
         if (!(Get-Command 'cmd' -ErrorAction 'SilentlyContinue')) {
             Write-Host "`e[31;1mPlease run the following commands to restore 'cmd.exe' as the `e[33mClear-Terminal`e[31;1m cmdlet relies on it,`e[0m"
             Write-Host "`nDISM /Online /Cleanup-Image /ScanHealth; DISM /Online /Cleanup-Image /CheckHealth; DISM /Online /Cleanup-Image /RestoreHealth; SFC /Scannow"
