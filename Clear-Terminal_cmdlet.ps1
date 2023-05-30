@@ -26,12 +26,8 @@
 
 .RELEASENOTES
     Version 0.1: Added the Clear-Terminal_cmdlet.ps1 file. First release.
-    Version 0.2: Improved the script so the aliases work better for PowerShell Core.
-    Version 0.2.2: Fixed bugs that occurred with PowerShell Core.
-    Version 0.2.4: Fixed bugs that occurred with PowerShell Core & Desktop.
-    Version 0.2.45: Edited the about page for Clear-Terminal.
-    Version 0.3: Edited and fixed the about page for Clear-Terminal.
     Version 0.3.1: Edited and fixed the about page for Clear-Terminal again.
+    Version 0.3.2: Edited and fixed the about page for Clear-Terminal again.
 #>
 
 foreach ($Private:alias in @('cls', 'clear', 'clt')) {
