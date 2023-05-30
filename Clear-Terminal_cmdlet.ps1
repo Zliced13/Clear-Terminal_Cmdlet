@@ -28,11 +28,11 @@
     Version 0.1: Added the Clear-Terminal_cmdlet.ps1 file. First release.
     Version 0.2: Improved the script so the aliases work better for PowerShell Core.
     Version 0.2.2: Fixed bugs that occurred with PowerShell Core.
-    Version 0.2.3: Fixed bugs that occurred with PowerShell Core & Desktop.
+    Version 0.2.3: Fixed bugs that occurred with PowerShell Core & Desktop
 #>
 
-foreach ($Private:alias in @('cls', 'clear')) {
-    Set-Alias $Private:alias 'clt' -Force -Option 'AllScope', 'Constant', 'ReadOnly' -Scope 'Global' -Description 'Aliases for the Clear-Terminal cmdlet' | Out-Null
+foreach ($Private:alias in @('cls', 'clear', 'clt')) {
+    Set-Alias $Private:alias 'Clear-Terminal' -Force -Option 'AllScope', 'Constant', 'ReadOnly' -Scope 'Global' -Description 'Aliases for the Clear-Terminal cmdlet' | Out-Null
 }
 
 <#
