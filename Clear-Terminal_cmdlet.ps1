@@ -30,10 +30,6 @@
     Version 0.3.3: Fixed the about page for Clear-Terminal again.
 #>
 
-foreach ($Private:alias in @('cls', 'clear', 'clt')) {
-    Set-Alias $Private:alias 'Clear-Terminal' -Force -Option 'AllScope', 'Constant', 'ReadOnly' -Scope 'Global' -Description 'Aliases for the Clear-Terminal cmdlet' | Out-Null
-}
-
 <#
 .SYNOPSIS
     An improved version of the Clear-Host cmdlet.
@@ -47,6 +43,7 @@ foreach ($Private:alias in @('cls', 'clear', 'clt')) {
 
 function Clear-Terminal {
     [CmdletBinding()]
+    [Alias('cls', 'clear', 'clt')]
     param (
         [Parameter(Mandatory = $false)]
         [switch][Alias('h')]$Help
