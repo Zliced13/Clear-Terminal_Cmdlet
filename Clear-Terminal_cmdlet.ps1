@@ -25,6 +25,7 @@
 .RELEASENOTES
     Version 0.1: Added the Clear-Terminal_cmdlet.ps1 file. First release.
     Version 0.2: Improved the script so the aliases work better for PowerShell Core.
+    Version 0.2.1: Fixed bugs that occurred with PowerShell Core.
 #>
 
 <#
@@ -40,7 +41,7 @@
 
 function Clear-Terminal {
     [CmdletBinding()]
-    [Alias('cls', 'clear')]
+    [Alias('clear')]
     param (
         [Parameter(Mandatory = $false)]
         [switch][Alias('h')]$Help
@@ -59,7 +60,5 @@ function Clear-Terminal {
 }
 
 if ($PSEdition -eq 'Core') {
-    foreach ($Private:alias in @('cls', 'clear')) {
-        Set-Alias $Private:alias 'Clear-Terminal' -Force -Option 'AllScope', 'Constant'
-    }
+    Set-Alias 'cls' 'Clear-Terminal' -Force -Option 'AllScope', 'Constant'
 }
