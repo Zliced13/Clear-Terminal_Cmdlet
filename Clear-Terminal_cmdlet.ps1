@@ -43,8 +43,6 @@ foreach ($Private:alias in @('cls', 'clear', 'clt')) {
     Displays this message, it will not accept any values. Aliases, h.
 .EXAMPLE
     Clear-Terminal <NoParameters>
-.ALIASES
-    'cls', 'clear', 'clt'
 #>
 
 function Clear-Terminal {
