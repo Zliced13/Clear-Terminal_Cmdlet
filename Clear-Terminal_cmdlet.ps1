@@ -30,6 +30,10 @@
     Version 0.2.2: Fixed bugs that occurred with PowerShell Core.
 #>
 
+foreach ($Private:alias in @('cls', 'clear')) {
+    Set-Alias $Private:alias 'Clear-Terminal' -Force -Option 'AllScope', 'Constant', 'ReadOnly' -Scope 'Global' -Description 'Aliases for the Clear-Terminal cmdlet' | Out-Null
+}
+
 <#
 .SYNOPSIS
     An improved version of the Clear-Host cmdlet.
@@ -40,10 +44,6 @@
 .EXAMPLE
     Clear-Terminal <NoParameters>
 #>
-
-foreach ($Private:alias in @('cls', 'clear')) {
-    Set-Alias $Private:alias 'Clear-Terminal' -Force -Option 'AllScope', 'Constant', 'ReadOnly' -Scope 'Global' -Description 'Aliases for the Clear-Terminal cmdlet' | Out-Null
-}
 
 function Clear-Terminal {
     [CmdletBinding()]
