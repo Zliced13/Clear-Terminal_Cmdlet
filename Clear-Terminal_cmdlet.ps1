@@ -42,9 +42,16 @@ foreach ($Private:alias in @('cls', 'clear', 'clt')) {
 .DESCRIPTION
     Clears everthing in the display in the host program, leaving nothing behind.
 .PARAMETER Help
-    Displays this message, it will not accept any values. Aliases, h.
+    Displays this message, it will not accept any values.
+    Aliases             h.
 .EXAMPLE
     Clear-Terminal <NoParameters>
+.NOTES
+    The aliases for this cmdlet are
+
+    cls
+    clear
+    clt
 #>
 
 function Clear-Terminal {
@@ -54,7 +61,7 @@ function Clear-Terminal {
         [switch][Alias('h')]$Help
     )
     process {
-        if ($Help) { Get-Help 'Clear-Terminal' -Full; Write-Host "`nALIASES`n    cls`n    clear`n    clt`n"; break }
+        if ($Help) { Get-Help 'Clear-Terminal' -Full; break }
         if (!(Get-Command 'cmd' -ErrorAction 'SilentlyContinue')) {
             Write-Host "`e[31;1mPlease run the following commands to restore 'cmd.exe' as the `e[33mClear-Terminal`e[31;1m cmdlet relies on it,`e[0m"
             Write-Host "`nDISM /Online /Cleanup-Image /ScanHealth; DISM /Online /Cleanup-Image /CheckHealth; DISM /Online /Cleanup-Image /RestoreHealth; SFC /Scannow"
