@@ -46,7 +46,7 @@ foreach ($Private:alias in @('cls', 'clear', 'clt')) {
 
     Aliases?                     h
 .NOTES
-    The aliases for this cmdlet are
+    The aliases for this cmdlet are,
 
     cls
     clear
