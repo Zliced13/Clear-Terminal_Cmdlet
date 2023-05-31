@@ -61,7 +61,7 @@ function Clear-Terminal {
             break
         }
         else {
-            cmd /c 'cls'
+            try { cmd /c 'cls' } finally { Start-Process 'cmd' -Args @('/c', 'cls') -NoNewWindow -ErrorAction 'SilentlyContinue' }
         }
     }
 }
