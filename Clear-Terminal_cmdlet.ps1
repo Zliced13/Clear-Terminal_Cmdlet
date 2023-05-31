@@ -45,6 +45,10 @@ foreach ($Private:alias in @('cls', 'clear', 'clt')) {
     Displays this message, it will not accept any values.
 
     Aliases?                     h
+.INPUTS
+    None. This cmdlet will not accept any PIPELINE input.
+.OUTPUTS
+    System.Object
 .NOTES
     The aliases for this cmdlet are,
 
