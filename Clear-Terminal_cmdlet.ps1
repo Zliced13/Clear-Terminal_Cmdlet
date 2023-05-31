@@ -60,8 +60,8 @@ function Clear-Terminal {
             Write-Host "`nDISM /Online /Cleanup-Image /ScanHealth; DISM /Online /Cleanup-Image /CheckHealth; DISM /Online /Cleanup-Image /RestoreHealth; SFC /Scannow"
             break
         }
-        else {
-            try { cmd /c 'cls' } finally { Start-Process 'cmd' -Args @('/c', 'cls') -NoNewWindow -ErrorAction 'SilentlyContinue' }
+        elseif ($Error -or $null) {
+            cmd /c 'cls'
         }
     }
 }
