@@ -44,7 +44,7 @@ foreach ($Private:alias in @('cls', 'clear', 'clt')) {
 .PARAMETER Help
     Displays this message, it will not accept any values.
 
-    Aliases?                      h
+    Aliases?                     h
 .NOTES
     The aliases for this cmdlet are
 
