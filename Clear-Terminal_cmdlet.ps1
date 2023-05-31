@@ -60,7 +60,7 @@ function Clear-Terminal {
             Write-Host "`nDISM /Online /Cleanup-Image /ScanHealth; DISM /Online /Cleanup-Image /CheckHealth; DISM /Online /Cleanup-Image /RestoreHealth; SFC /Scannow"
             break
         }
-        elseif ($Error -or $null) {
+        elseif ($Error -or $false) {
             cmd /c 'cls'
         }
     }
