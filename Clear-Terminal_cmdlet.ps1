@@ -43,7 +43,7 @@ foreach ($Private:alias in @('cls', 'clear', 'clt')) {
     Clears everthing in the display in the host program, leaving nothing behind.
 .PARAMETER Help
     Displays this message, it will not accept any values.
-    Aliases             h.
+    Aliases                 h
 .EXAMPLE
     Clear-Terminal <NoParameters>
 .NOTES
